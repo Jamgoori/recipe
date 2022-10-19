@@ -7,6 +7,7 @@ function Popular() {
   useEffect(() => {
     getPopular();
   }, []);
+  
   const getPopular = async () => {
     const check = localStorage.getItem("popular");
     if (check) {
@@ -18,6 +19,7 @@ function Popular() {
       const data = await api.json();
       localStorage.setItem("populsar", JSON.stringify(data.recipes));
       setPopular(data.recipes);
+      console.log(data.recipes);
     }
   };
 
