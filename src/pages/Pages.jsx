@@ -3,7 +3,8 @@ import Home from './Home'
 
 function Pages() {
   return (
-    <div><Home/></div>
+    <div><Home/>
+    </div>
   )
 }
 

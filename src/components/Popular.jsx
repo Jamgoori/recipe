@@ -26,7 +26,7 @@ function Popular() {
   return (
     <div>
       <Wrapper>
-        <h3>Poupular Picks</h3>
+        <h3>인기 음식</h3>
         <Splide
           options={{
             perPage: 4,
