@@ -7,7 +7,7 @@ function Popular() {
   useEffect(() => {
     getPopular();
   }, []);
-  
+
   const getPopular = async () => {
     const check = localStorage.getItem("popular");
     if (check) {
@@ -25,7 +25,6 @@ function Popular() {
 
   return (
     <div>
-      return(
       <Wrapper>
         <h3>Poupular Picks</h3>
         <Splide
@@ -50,7 +49,6 @@ function Popular() {
           })}
         </Splide>
       </Wrapper>
-      );
     </div>
   );
 }
